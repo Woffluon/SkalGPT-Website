@@ -1,0 +1,41 @@
+# SkalGPT - Eğitim AI Asistanı
+# https://skalgpt.netlify.app
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /.netlify/
+
+# Özel bot kuralları
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap konumu
+Sitemap: https://skalgpt.netlify.app/sitemap.xml
+
+# Genel crawl ayarları
+Crawl-delay: 1
+
+# Host belirtimi
+Host: https://skalgpt.netlify.app
