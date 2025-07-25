@@ -128,7 +128,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "KpJ8E_W9V6eb12W1wEixHzVMFdCW3bsL201Q1QjhOxE",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
     other: {
