@@ -55,12 +55,13 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
-/* Custom scrollbar */
+/* Optimized scrollbar for mobile */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -69,7 +70,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -81,12 +82,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles */
+/* Focus styles for accessibility */
 .focus-visible:focus-visible {
   @apply ring-2 ring-blue-500 ring-offset-2 outline-none;
 }
 
-/* Subtle Animations */
+/* Optimized animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -99,7 +100,7 @@ html {
 @keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -110,7 +111,7 @@ html {
 @keyframes slide-in-left {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
@@ -121,7 +122,7 @@ html {
 @keyframes slide-in-right {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(20px);
   }
   to {
     opacity: 1;
@@ -129,45 +130,32 @@ html {
   }
 }
 
-@keyframes scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .animate-fade-in {
-  animation: fade-in 0.8s ease-out;
+  animation: fade-in 0.6s ease-out;
 }
 
 .animate-slide-up {
-  animation: slide-up 0.8s ease-out;
+  animation: slide-up 0.6s ease-out;
 }
 
 .animate-slide-in-left {
-  animation: slide-in-left 0.8s ease-out;
+  animation: slide-in-left 0.6s ease-out;
 }
 
 .animate-slide-in-right {
-  animation: slide-in-right 0.8s ease-out;
+  animation: slide-in-right 0.6s ease-out;
 }
 
-.animate-scale-in {
-  animation: scale-in 0.8s ease-out;
-}
-
-/* Hover animations for cards */
+/* Mobile-optimized hover effects */
 .card-hover {
   transition: all 0.3s ease;
 }
 
-.card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+@media (hover: hover) {
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
 }
 
 /* Button hover effects */
@@ -175,8 +163,10 @@ html {
   transition: all 0.3s ease;
 }
 
-.btn-hover:hover {
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .btn-hover:hover {
+    transform: translateY(-1px);
+  }
 }
 
 /* Stagger animation delays */
@@ -188,37 +178,6 @@ html {
 }
 .stagger-3 {
   animation-delay: 0.3s;
-}
-.stagger-4 {
-  animation-delay: 0.4s;
-}
-.stagger-5 {
-  animation-delay: 0.5s;
-}
-.stagger-6 {
-  animation-delay: 0.6s;
-}
-
-/* Loading animation for images */
-.image-loading {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: loading 1.5s infinite;
-}
-
-@keyframes loading {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-/* Smooth transitions for all interactive elements */
-* {
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s
-    ease;
 }
 
 /* Performance optimizations */
@@ -239,4 +198,75 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Improved text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mobile Bottom Navigation Styles */
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .mobile-nav-item {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .mobile-nav-active {
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth transitions for mobile navigation */
+.mobile-nav-transition {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  .mobile-touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Mobile navigation backdrop */
+.mobile-nav-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }

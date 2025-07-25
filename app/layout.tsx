@@ -11,37 +11,36 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   preload: true,
+  variable: "--font-inter",
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://skalgpt.netlify.app"),
   title: {
-    default: "SkalGPT - Sezai Karakoç Anadolu Lisesi Yapay Zeka Asistanı | Eğitim AI Chatbot",
-    template: "%s | SkalGPT - Eğitim AI Asistanı",
+    default: "SkalGPT - Sezai Karakoç Anadolu Lisesi Yapay Zeka Asistanı | Çok Yönlü AI",
+    template: "%s | SkalGPT - Yapay Zeka Asistanı",
   },
   description:
-    "SkalGPT, Sezai Karakoç Anadolu Lisesi'nin resmi yapay zeka asistanıdır. Öğrenciler için ders desteği, öğretmenler için materyal geliştirme ve idare için yönetim desteği sunar. 7/24 erişilebilir eğitim chatbotu.",
+    "SkalGPT, Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş, çok yönlü bir yapay zeka asistanıdır. Akademik destek, yaratıcı yazım, özetleme, analiz ve problem çözme gibi birçok alanda hizmet sunar.",
   keywords: [
-    "yapay zeka eğitim",
+    "yapay zeka asistanı",
     "AI chatbot Türkiye",
-    "eğitim asistanı",
     "SkalGPT",
     "Sezai Karakoç Anadolu Lisesi",
     "öğrenci yardımı AI",
     "öğretmen desteği yapay zeka",
-    "eğitim teknolojisi",
+    "yaratıcı yazım AI",
+    "özetleme yapay zeka",
+    "analiz AI",
+    "problem çözme yapay zeka",
+    "dil becerileri AI",
+    "fikir geliştirme yapay zeka",
     "okul AI asistanı",
-    "Türkçe eğitim chatbot",
-    "ders yardımı AI",
-    "ödev desteği yapay zeka",
-    "sınav hazırlığı AI",
-    "matematik AI yardımı",
-    "fen bilimleri AI",
-    "dil öğrenme AI",
-    "eğitim chatbot Türkiye",
-    "okul yapay zeka",
-    "öğrenci başarı AI",
-    "eğitim teknoloji çözümleri",
+    "Türkçe AI asistanı",
+    "akademik destek AI",
+    "eğitim teknolojisi",
+    "çok yönlü AI",
+    "akıllı asistan",
   ],
   authors: [
     { name: "Sezai Karakoç Anadolu Lisesi", url: "https://skalgpt.netlify.app" },
@@ -72,16 +71,16 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     alternateLocale: ["en_US"],
     url: "https://skalgpt.netlify.app",
-    siteName: "SkalGPT - Eğitim AI Asistanı",
+    siteName: "SkalGPT - Yapay Zeka Asistanı",
     title: "SkalGPT - Sezai Karakoç Anadolu Lisesi Yapay Zeka Asistanı",
     description:
-      "Türkiye'nin ilk okul odaklı yapay zeka asistanı. Öğrenciler, öğretmenler ve idare için özel geliştirilmiş eğitim chatbotu. 7/24 ders desteği, ödev yardımı ve sınav hazırlığı.",
+      "Sezai Karakoç Anadolu Lisesi'ne özel çok yönlü yapay zeka asistanı. Akademik destek, yaratıcı yazım, özetleme, analiz ve problem çözme gibi birçok alanda hizmet sunar.",
     images: [
       {
         url: "/favicon.png",
         width: 512,
         height: 512,
-        alt: "SkalGPT Logo - Eğitim Yapay Zeka Asistanı",
+        alt: "SkalGPT Logo - Yapay Zeka Asistanı",
         type: "image/png",
       },
       {
@@ -97,8 +96,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@skalgpt",
     creator: "@skalgpt",
-    title: "SkalGPT - Türkiye'nin İlk Okul Odaklı AI Asistanı",
-    description: "Eğitimde yapay zeka devrimi! Öğrenciler için ders desteği, öğretmenler için materyal geliştirme.",
+    title: "SkalGPT - Sezai Karakoç Anadolu Lisesi Yapay Zeka Asistanı",
+    description: "Çok yönlü yapay zeka asistanı! Akademik destek, yaratıcı yazım, özetleme, analiz ve problem çözme.",
     images: ["/favicon.png"],
   },
   icons: {
@@ -157,7 +156,7 @@ export const metadata: Metadata = {
   },
   applicationName: "SkalGPT",
   generator: "Next.js",
-  abstract: "Sezai Karakoç Anadolu Lisesi'nin resmi yapay zeka eğitim asistanı",
+  abstract: "Sezai Karakoç Anadolu Lisesi'nin resmi yapay zeka asistanı",
   archives: ["https://skalgpt.netlify.app/sitemap.xml"],
   bookmarks: ["https://skalgpt.netlify.app"],
   other: {
@@ -173,10 +172,10 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
+  "@type": "SoftwareApplication",
   name: "SkalGPT",
   alternateName: "Sezai Karakoç Anadolu Lisesi AI Asistanı",
-  description: "Türkiye'nin ilk okul odaklı yapay zeka eğitim asistanı",
+  description: "Sezai Karakoç Anadolu Lisesi'ne özel çok yönlü yapay zeka asistanı",
   url: "https://skalgpt.netlify.app",
   logo: {
     "@type": "ImageObject",
@@ -191,24 +190,6 @@ const jsonLd = {
     height: 600,
   },
   sameAs: ["https://skalgpt.netlify.app", "https://github.com/skalgpt"],
-  parentOrganization: {
-    "@type": "EducationalOrganization",
-    name: "Sezai Karakoç Anadolu Lisesi",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "TR",
-      addressLocality: "İstanbul",
-    },
-  },
-  offers: {
-    "@type": "Offer",
-    name: "Ücretsiz AI Eğitim Desteği",
-    description: "7/24 erişilebilir yapay zeka eğitim asistanı hizmeti",
-    category: "Educational Service",
-    availability: "https://schema.org/InStock",
-    price: "0",
-    priceCurrency: "TRY",
-  },
   applicationCategory: "EducationalApplication",
   operatingSystem: "Web Browser",
   softwareVersion: "1.0.0",
@@ -219,8 +200,32 @@ const jsonLd = {
     "@type": "EducationalAudience",
     educationalRole: ["student", "teacher", "administrator"],
   },
-  educationalLevel: "High School",
-  teaches: ["Matematik", "Fen Bilimleri", "Türkçe", "İngilizce", "Sosyal Bilimler", "Eğitim Teknolojileri"],
+  offers: {
+    "@type": "Offer",
+    name: "Ücretsiz AI Asistan Hizmeti",
+    description: "Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel yapay zeka asistanı",
+    category: "Software Service",
+    availability: "https://schema.org/InStock",
+    price: "0",
+    priceCurrency: "TRY",
+  },
+  provider: {
+    "@type": "EducationalOrganization",
+    name: "Sezai Karakoç Anadolu Lisesi",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "TR",
+      addressLocality: "İstanbul",
+    },
+  },
+  featureList: [
+    "Akademik destek",
+    "Yaratıcı yazım",
+    "Özetleme ve analiz",
+    "Problem çözme",
+    "Dil becerileri",
+    "Fikir geliştirme",
+  ],
 }
 
 export default function RootLayout({
@@ -242,7 +247,7 @@ export default function RootLayout({
         <LanguageProvider>
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pb-20 lg:pb-0">{children}</main>
             <Footer />
           </div>
           <ScrollToTop />
