@@ -12,6 +12,46 @@ import Head from "next/head"
 export default function HomePage() {
   const { t } = useLanguage()
 
+  const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SkalGPT Ana Sayfa - Yapay Zeka Asistanı",
+    "description": "Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için çok yönlü yapay zeka asistanı. Akademik destek, yaratıcı yazım ve problem çözme.",
+    "url": "https://skalgpt.netlify.app",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://skalgpt.netlify.app"
+        }
+      ]
+    },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SkalGPT nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SkalGPT, Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş çok yönlü bir yapay zeka asistanıdır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kimler kullanabilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli SkalGPT'yi kullanabilir."
+          }
+        }
+      ]
+    }
+  }
+
   return (
     <>
       <Head>
@@ -26,6 +66,10 @@ export default function HomePage() {
         />
         <link rel="canonical" href="https://skalgpt.netlify.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+        />
       </Head>
 
       <div className="min-h-screen">

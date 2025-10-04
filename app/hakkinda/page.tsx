@@ -10,6 +10,37 @@ import Head from "next/head"
 export default function AboutPage() {
   const { t } = useLanguage()
 
+  const aboutJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "SkalGPT Hakkında",
+    "description": "SkalGPT'nin misyonu, vizyonu ve temel değerleri hakkında detaylı bilgi.",
+    "url": "https://skalgpt.netlify.app/hakkinda",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://skalgpt.netlify.app"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hakkında",
+          "item": "https://skalgpt.netlify.app/hakkinda"
+        }
+      ]
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Sezai Karakoç Anadolu Lisesi",
+      "url": "https://skalgpt.netlify.app",
+      "logo": "https://skalgpt.netlify.app/favicon.png"
+    }
+  }
+
   return (
     <>
       <Head>
@@ -24,6 +55,10 @@ export default function AboutPage() {
         />
         <link rel="canonical" href="https://skalgpt.netlify.app/hakkinda" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+        />
       </Head>
 
       <div className="min-h-screen py-8 sm:py-12 px-4">

@@ -12,6 +12,65 @@ import Head from "next/head"
 export default function FAQPage() {
   const { t } = useLanguage()
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "SkalGPT Hakkında Sık Sorulan Sorular",
+    "description": "SkalGPT yapay zeka asistanı hakkında en çok sorulan sorular ve yanıtları.",
+    "url": "https://skalgpt.netlify.app/sss",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://skalgpt.netlify.app"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SSS",
+          "item": "https://skalgpt.netlify.app/sss"
+        }
+      ]
+    },
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "SkalGPT nedir ve nasıl çalışır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SkalGPT, Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş çok yönlü bir yapay zeka asistanıdır. Okul içi bilgiye erişimi kolaylaştırır, akademik süreçlerde destek olur. Bilgi sağlama, yaratıcı yazım, özetleme, analiz ve problem çözme gibi birçok alanda hizmet sunar. NOT: Görsel veya resim tanıma yetenekleri bulunmamaktadır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SkalGPT'ye nasıl erişebilirim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SkalGPT şu anda aktif olarak geliştirilmekte olup, yakın zamanda Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personelinin kullanımına açılacaktır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SkalGPT güvenli mi? Verilerim korunuyor mu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, SkalGPT tamamen güvenlidir. Tüm konuşmalarınız şifrelenir ve kişisel verileriniz korunur. Sohbetler maksimum 30 gün saklanır ve süre sonunda silinir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SkalGPT 7/24 kullanılabilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, SkalGPT günün her saati kullanılabilir. İstediğiniz zaman sorularınızı sorabilir ve anında yanıt alabilirsiniz."
+        }
+      }
+    ]
+  }
+
   const faqs = [
     {
       question: t("faqQuestion1"),
@@ -61,6 +120,10 @@ export default function FAQPage() {
         />
         <link rel="canonical" href="https://skalgpt.netlify.app/sss" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
       </Head>
 
       <div className="min-h-screen py-8 sm:py-12 px-4">

@@ -53,14 +53,5 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://skalgpt.netlify.app/en/faq" />
   </url>
 
-  <!-- Demo Sayfası -->
-  <url>
-    <loc>https://skalgpt.netlify.app/demo</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://skalgpt.netlify.app/demo" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://skalgpt.netlify.app/en/demo" />
-  </url>
 
 </urlset>
