@@ -55,8 +55,8 @@ export default function FeaturesPage() {
     },
     {
       icon: Info,
-      title: t("schoolInfo"),
-      description: t("schoolInfoDesc"),
+      title: t("schoolInformation"),
+      description: t("schoolInformationDesc"),
     },
     {
       icon: Clock,

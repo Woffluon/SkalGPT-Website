@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 
@@ -19,8 +17,9 @@ yarn-error.log*
 # env files
 .env*
 
-# vercel
-.vercel
+#development
+package-lock.json
+.kiro
 
 # typescript
 *.tsbuildinfo

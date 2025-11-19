@@ -27,7 +27,7 @@ const translations = {
     heroTitle: "SkalGPT",
     heroSubtitle: "Yapay Zeka Asistanınız",
     heroDescription:
-      "Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş, çok yönlü bir yapay zeka asistanı. Okul içi bilgiye erişimi kolaylaştırır, akademik süreçlerde destek olur ve çeşitli konularda yardımcı bir rehber görevi görür.",
+      "Sezai Karakoç Anadolu Lisesi için özel olarak geliştirilmiş, çok yönlü yapay zeka asistanı. Sadece bir eğitim asistanı değil; aynı zamanda rehber, danışman ve bilgi kaynağı. Okul topluluğunun bilgiye erişimini kolaylaştırır, akademik süreçlerde destek olur ve çeşitli konularda yardımcı olur.",
     whySkalGPT: "Neden SkalGPT?",
     whySkalGPTDesc: "Sezai Karakoç Anadolu Lisesi'ne özel, çok yönlü ve güvenilir yapay zeka asistanı",
     forStudents: "Öğrenciler İçin",
@@ -38,14 +38,14 @@ const translations = {
       "Ders planı hazırlama, materyal geliştirme, öğrenci değerlendirme ve eğitim teknolojileri konularında profesyonel destek.",
     forAdmin: "İdare İçin",
     forAdminDesc:
-      "Duyuru yönetimi, bilgi paylaşımı, okul politikaları hakkında rehberlik ve yönetimsel süreçlerde destek.",
+      "İdari süreçlerde destek, okul prosedürleri ve kurallar hakkında bilgi, etkinlik planlama, organizasyon önerileri ve kurumsal iletişim desteği.",
     reliableOfficial: "Güvenilir ve Resmi",
     schoolApproved: "Okul Onaylı",
     schoolApprovedDesc:
       "Sezai Karakoç Anadolu Lisesi tarafından resmi olarak geliştirilmiş ve onaylanmış yapay zeka asistanı.",
     educationFocused: "Çok Yönlü Asistan",
     educationFocusedDesc:
-      "Eğitim desteğinin yanı sıra yaratıcı yazım, özetleme, analiz ve problem çözme gibi birçok alanda hizmet sunar.",
+      "Sadece eğitim değil; idari destek, yaratıcı yazım, özetleme, analiz, dil becerileri ve problem çözme gibi birçok alanda hizmet sunar. Rehber, danışman ve bilgi kaynağı.",
     continuousDevelopment: "Sürekli Gelişim",
     continuousDevelopmentDesc:
       "Okul ihtiyaçlarına göre sürekli güncellenen ve geliştirilen akıllı asistan teknolojisi.",
@@ -58,21 +58,21 @@ const translations = {
     // About page
     aboutSkalGPT: "SkalGPT Kimdir?",
     aboutDesc:
-      "Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş, çok yönlü yapay zeka asistanı. Okul içi bilgiye erişimi kolaylaştırmak, akademik süreçlerde destek olmak ve çeşitli konularda yardımcı rehber görevi görmek için tasarlandı.",
+      "SkalGPT, Sezai Karakoç Anadolu Lisesi için özel olarak geliştirilmiş, çok yönlü bir yapay zeka asistanıdır. Sadece bir eğitim asistanı değil; aynı zamanda rehber, danışman ve bilgi kaynağıdır. Okul topluluğunun idari, pedagojik ve iletişim süreçlerine destek sağlar.",
     ourMission: "Misyonumuz",
     missionDesc:
-      "Okul içi bilgiye erişimi kolaylaştırmak, akademik süreçlerde destek olmak ve çeşitli konularda yardımcı bir rehber görevi görmek. Sezai Karakoç Anadolu Lisesi ailesinin her üyesine güvenilir, doğru ve açık bilgi sağlamak.",
+      "Okul topluluğunun bilgiye erişimini kolaylaştırmak, öğrencilerin ve personelin ihtiyaçlarını karşılamak, etik ve güvenli bir öğrenme ile iletişim ortamı oluşturmak. Akademik dürüstlük, etik davranış, öğrenci ve personel güvenliği, şeffaf iletişim ve kalite odaklı hizmet sunmak.",
     ourVision: "Vizyonumuz",
     visionDesc:
-      "Bilgi sağlama, yaratıcı yazım görevlerinde destek olma, metinleri özetleme ve karmaşık konuları analiz etme konularında geniş bir hizmet yelpazesi sunarak, okulumuzun dijital dönüşümüne katkıda bulunmak.",
+      "Akademik destek, yaratıcı yazım, özetleme, analiz, problem çözme ve fikir geliştirme konularında geniş bir hizmet yelpazesi sunarak, okulumuzun dijital dönüşümüne katkıda bulunmak. Samimi, sabırlı, teşvik edici, dürüst ve yapıcı bir yaklaşımla her kullanıcıya destek olmak.",
     coreValues: "Temel Değerlerimiz",
     coreValuesDesc: "SkalGPT'nin geliştirilmesinde ve kullanımında rehber olan ilkelerimiz",
     reliability: "Güvenilirlik",
-    reliabilityDesc: "Doğru, açık, güvenli ve seviyeye uygun yanıtlar. Okul değerlerini yansıtan samimi, motive edici ve öğretici bir yaklaşım.",
+    reliabilityDesc: "Doğru, açık, güvenli ve seviyeye uygun yanıtlar. Okul değerlerini yansıtan samimi, destekleyici ve teşvik edici bir yaklaşım. Bilmediği konularda dürüst ve şeffaf.",
     inclusivity: "Kapsayıcılık",
-    inclusivityDesc: "Tüm okul topluluğu için erişilebilir destek. Kullanıcıyı yargılamadan destekleyici bir üslupla yönlendirme.",
+    inclusivityDesc: "Tüm okul topluluğu için erişilebilir destek. Sabırlı, anlayışlı ve yargılamadan destekleyici bir üslupla yönlendirme. Her kullanıcının farklı bilgi düzeyini kabul eder.",
     ethics: "Etik",
-    ethicsDesc: "Saygılı ve şeffaf iletişim. Kişisel veri toplama veya paylaşma yapılmaz. Güvenlik ve gizlilik en üst düzeyde.",
+    ethicsDesc: "Akademik dürüstlük ve etik davranış. Kişisel veri toplama veya paylaşma yapılmaz. Zararlı içerik üretmez. Güvenlik ve gizlilik en üst düzeyde korunur.",
     schoolConnection: "Sezai Karakoç Anadolu Lisesi ile Bağımız",
     schoolConnectionDesc1:
       "SkalGPT, Sezai Karakoç Anadolu Lisesi'nin vizyonunu desteklemek ve okul topluluğunun dijital dönüşüm sürecine katkıda bulunmak amacıyla geliştirilmiştir.",
@@ -96,11 +96,11 @@ const translations = {
     problemSolving: "Problem Çözme",
     problemSolvingDesc: "Adım adım problem çözümleri ve farklı çözüm yöntemleri",
     homeworkHelp: "Ödev Yardımı",
-    homeworkHelpDesc: "Ödev konularında rehberlik ve araştırma desteği",
+    homeworkHelpDesc: "Ödev konularında rehberlik, araştırma stratejileri ve kavramsal destek (doğrudan çözüm vermez)",
     examPrep: "Sınav Hazırlığı",
     examPrepDesc: "Sınav stratejileri, özet notlar ve test soruları",
-    schoolInfo: "Okul Bilgileri",
-    schoolInfoDesc: "Okul kuralları, etkinlikler ve duyurular hakkında bilgi",
+    schoolInformation: "Okul Bilgileri",
+    schoolInformationDesc: "Okul kuralları, etkinlikler ve duyurular hakkında bilgi",
     access247: "7/24 Erişim",
     access247Desc: "İstediğiniz zaman sorularınızı sorabileceğiniz sürekli destek",
     lessonPlan: "Ders Planı",
@@ -154,7 +154,7 @@ const translations = {
     // Updated FAQ Questions and Answers (removed 2 questions, updated 1)
     faqQuestion1: "SkalGPT nedir ve nasıl çalışır?",
     faqAnswer1:
-      "SkalGPT, Sezai Karakoç Anadolu Lisesi öğrencileri, öğretmenleri ve personeli için özel olarak geliştirilmiş çok yönlü bir yapay zeka asistanıdır. Okul içi bilgiye erişimi kolaylaştırır, akademik süreçlerde destek olur. Bilgi sağlama, yaratıcı yazım, özetleme, analiz ve problem çözme gibi birçok alanda hizmet sunar. NOT: Görsel veya resim tanıma yetenekleri bulunmamaktadır.",
+      "SkalGPT, Sezai Karakoç Anadolu Lisesi için özel olarak geliştirilmiş, çok yönlü bir yapay zeka asistanıdır. Sadece bir eğitim asistanı değil; aynı zamanda rehber, danışman ve bilgi kaynağıdır. Okul topluluğunun idari, pedagojik ve iletişim süreçlerine destek sağlar. Akademik destek, yaratıcı yazım, özetleme, analiz, dil becerileri, problem çözme ve fikir geliştirme gibi birçok alanda hizmet sunar. ÖNEMLİ: Görsel veya resim tanıma yetenekleri bulunmamaktadır.",
 
     faqQuestion2: "SkalGPT'ye nasıl erişebilirim?",
     faqAnswer2:
@@ -162,11 +162,11 @@ const translations = {
 
     faqQuestion3: "SkalGPT güvenli mi? Verilerim korunuyor mu?",
     faqAnswer3:
-      "Evet, SkalGPT tamamen güvenlidir. Tüm konuşmalarınız şifrelenir ve kişisel verileriniz korunur. Okul politikalarına uygun olarak tasarlanmış olup, gizlilik ve güvenlik en üst düzeyde sağlanır. Sohbetler teknik ve güvenlik kısıtlamaları nedeniyle maksimum 30 gün saklanır ve süre sonunda silinir.",
+      "Evet, SkalGPT tamamen güvenlidir. Kişisel veri toplama veya paylaşma yapılmaz. Tüm konuşmalarınız şifrelenir ve gizlilik en üst düzeyde korunur. Zararlı içerik (şiddet, nefret söylemi, cinsel içerik, kendine zarar verme vb.) üretmez veya desteklemez. Akademik dürüstlüğe önem verir ve ödev/sınav sorularına doğrudan tam çözüm vermez. Sohbetler maksimum 30 gün saklanır ve süre sonunda otomatik olarak silinir.",
 
     faqQuestion4: "Hangi konularda yardım alabilirim?",
     faqAnswer4:
-      "Okul hakkında kapsamlı bilgi, akademik konularda destek, yaratıcı yazım (hikaye, şiir, senaryo, deneme), özetleme ve analiz, dil becerileri (çeviri, dilbilgisi), problem çözme ve fikir geliştirme konularında yardım alabilirsiniz. Ancak görsel veya resim tanıma desteği bulunmamaktadır.",
+      "Çok geniş bir yelpazede destek alabilirsiniz: Okul bilgileri ve prosedürler, akademik konu anlatımları ve kavramsal destek, yaratıcı yazım (hikaye, şiir, deneme, senaryo), metin özetleme ve analiz, dil becerileri (çeviri, dilbilgisi, kelime dağarcığı), problem çözme stratejileri, fikir geliştirme ve beyin fırtınası, araştırma konuları ve kaynak bulma stratejileri, öğrenme teknikleri ve çalışma metodları. SINIRLAMALAR: Görsel/resim tanıma yapamaz, ödev/sınav sorularına doğrudan tam çözüm vermez, zararlı içerik üretmez.",
 
     faqQuestion5: "SkalGPT 7/24 kullanılabilir mi?",
     faqAnswer5:
@@ -174,11 +174,11 @@ const translations = {
 
     faqQuestion6: "Öğretmenler SkalGPT'yi nasıl kullanabilir?",
     faqAnswer6:
-      "Öğretmenler SkalGPT'yi ders planı hazırlama, eğitim materyali geliştirme, sınav soruları oluşturma ve pedagojik konularda destek almak için kullanabilir. Ayrıca öğrenci değerlendirme kriterleri ve sınıf yönetimi stratejileri konularında da yardım alabilirler.",
+      "Öğretmenler SkalGPT'yi çok çeşitli alanlarda kullanabilir: Detaylı ders planları hazırlama ve müfredat desteği, eğitim materyalleri, çalışma kağıtları ve sunum hazırlama, sınav soruları oluşturma ve öğrenci değerlendirme kriterleri, sınıf içi etkinlikler ve öğrenci motivasyonu stratejileri, öğretim yöntemleri ve eğitim teknolojileri konularında rehberlik, mesleki gelişim önerileri ve güncel eğitim trendleri. SkalGPT, öğretmenlerin işini kolaylaştırmak ve pedagojik süreçleri desteklemek için tasarlanmıştır.",
 
     faqQuestion7: "SkalGPT yanlış bilgi verebilir mi?",
     faqAnswer7:
-      "Evet, her teknoloji gibi SkalGPT de %100 hatasız değildir. Veri tabanı ve kaynak kısıtlamaları nedeniyle zaman zaman hatalı yanıtlar verilebilir. Bu nedenle önemli konularda aldığınız bilgileri doğrulamanız ve gerektiğinde öğretmenlerinizle kontrol etmeniz önerilir. Sahip olmadığı bilgiyi iddia etmez ve tahmin verirken bunu açıkça belirtir.",
+      "Evet, her teknoloji gibi SkalGPT de %100 hatasız değildir. Veri tabanı ve kaynak kısıtlamaları nedeniyle zaman zaman hatalı yanıtlar verilebilir. Ancak SkalGPT dürüst ve şeffaftır: Emin olmadığı konularda bunu açıkça belirtir, sahip olmadığı bilgiyi iddia etmez, tahmin verirken bunu söyler ve alternatif kaynaklara yönlendirir. Önemli konularda aldığınız bilgileri doğrulamanız ve gerektiğinde öğretmenlerinizle kontrol etmeniz önerilir. SkalGPT hataları öğrenme fırsatı olarak görür ve sürekli gelişir.",
 
     faqQuestion8: "SkalGPT'de teknik sorun yaşarsam ne yapmalıyım?",
     faqAnswer8:
@@ -206,7 +206,7 @@ const translations = {
     heroTitle: "SkalGPT",
     heroSubtitle: "Your AI Assistant",
     heroDescription:
-      "A versatile artificial intelligence assistant specially developed for students, teachers and staff of Sezai Karakoç Anadolu Lisesi. Facilitates access to in-school information, supports academic processes, and serves as a helpful guide in various topics.",
+      "A versatile artificial intelligence assistant specially developed for Sezai Karakoç Anadolu Lisesi. Not just an educational assistant; also a guide, consultant, and information source. Facilitates the school community's access to information, supports academic processes, and helps in various topics.",
     whySkalGPT: "Why SkalGPT?",
     whySkalGPTDesc:
       "A versatile and reliable artificial intelligence assistant exclusive to Sezai Karakoç Anadolu Lisesi",
@@ -225,7 +225,7 @@ const translations = {
       "An artificial intelligence assistant officially developed and approved by Sezai Karakoç Anadolu Lisesi.",
     educationFocused: "Versatile Assistant",
     educationFocusedDesc:
-      "In addition to educational support, it provides services in many areas such as creative writing, summarization, analysis, and problem solving.",
+      "Not just education; provides services in many areas such as administrative support, creative writing, summarization, analysis, language skills, and problem solving. A guide, consultant, and information source.",
     continuousDevelopment: "Continuous Development",
     continuousDevelopmentDesc:
       "Smart assistant technology that is continuously updated and developed according to school needs.",
@@ -238,7 +238,7 @@ const translations = {
     // About page
     aboutSkalGPT: "Who is SkalGPT?",
     aboutDesc:
-      "A versatile artificial intelligence assistant specially developed for students, teachers and staff of Sezai Karakoç Anadolu Lisesi. Designed to facilitate access to in-school information, support academic processes, and serve as a helpful guide in various topics.",
+      "SkalGPT is a versatile artificial intelligence assistant specially developed for Sezai Karakoç Anadolu Lisesi. Not just an educational assistant; also a guide, consultant, and information source. Supports the school community's administrative, pedagogical, and communication processes.",
     ourMission: "Our Mission",
     missionDesc:
       "To facilitate access to in-school information, support academic processes, and serve as a helpful guide in various topics. To provide reliable, accurate, and clear information to every member of the Sezai Karakoç Anadolu Lisesi family.",
@@ -279,8 +279,8 @@ const translations = {
     homeworkHelpDesc: "Guidance and research support on homework topics",
     examPrep: "Exam Preparation",
     examPrepDesc: "Exam strategies, summary notes and test questions",
-    schoolInfo: "School Information",
-    schoolInfoDesc: "Information about school rules, activities and announcements",
+    schoolInformation: "School Information",
+    schoolInformationDesc: "Information about school rules, activities and announcements",
     access247: "24/7 Access",
     access247Desc: "Continuous support where you can ask your questions anytime",
     lessonPlan: "Lesson Plan",
@@ -334,7 +334,7 @@ const translations = {
     // Updated FAQ Questions and Answers (removed 2 questions, updated 1)
     faqQuestion1: "What is SkalGPT and how does it work?",
     faqAnswer1:
-      "SkalGPT is a versatile artificial intelligence assistant specially developed for students, teachers and staff of Sezai Karakoç Anadolu Lisesi. It facilitates access to in-school information and supports academic processes. It provides services in many areas such as information provision, creative writing, summarization, analysis, and problem solving. NOTE: It does not have image or visual recognition capabilities.",
+      "SkalGPT is a versatile artificial intelligence assistant specially developed for Sezai Karakoç Anadolu Lisesi. Not just an educational assistant; also a guide, consultant, and information source. Supports the school community's administrative, pedagogical, and communication processes. Provides services in many areas such as academic support, creative writing, summarization, analysis, language skills, problem solving, and idea generation. IMPORTANT: It does not have image or visual recognition capabilities.",
 
     faqQuestion2: "How can I access SkalGPT?",
     faqAnswer2:
@@ -342,11 +342,11 @@ const translations = {
 
     faqQuestion3: "Is SkalGPT secure? Is my data protected?",
     faqAnswer3:
-      "Yes, SkalGPT is completely secure. All your conversations are encrypted and your personal data is protected. It is designed in accordance with school policies, and privacy and security are ensured at the highest level. Conversations are stored for a maximum of 30 days due to technical and security limitations and are deleted after that period.",
+      "Yes, SkalGPT is completely secure. No personal data collection or sharing. All conversations are encrypted and privacy is protected at the highest level. Does not produce or support harmful content (violence, hate speech, sexual content, self-harm, etc.). Values academic integrity and does not provide direct complete solutions to homework/exam questions. Conversations are stored for a maximum of 30 days and automatically deleted after that period.",
 
     faqQuestion4: "What topics can I get help with?",
     faqAnswer4:
-      "Comprehensive information about the school, academic support, creative writing (stories, poems, scripts, essays), summarization and analysis, language skills (translation, grammar), problem solving, and idea generation. However, it does not support image or visual recognition.",
+      "You can get support in a wide range of areas: School information and procedures, academic topic explanations and conceptual support, creative writing (stories, poems, essays, scripts), text summarization and analysis, language skills (translation, grammar, vocabulary), problem-solving strategies, idea generation and brainstorming, research topics and resource finding strategies, learning techniques and study methods. LIMITATIONS: Cannot recognize images/visuals, does not provide direct complete solutions to homework/exam questions, does not produce harmful content.",
 
     faqQuestion5: "Is SkalGPT available 24/7?",
     faqAnswer5:
@@ -358,7 +358,7 @@ const translations = {
 
     faqQuestion7: "Can SkalGPT give wrong information?",
     faqAnswer7:
-      "Yes, like any technology, SkalGPT is not 100% error-free. It may occasionally give incorrect answers due to database and source limitations. Therefore, it is recommended that you verify the information you receive on important topics and check with your teachers when necessary. It does not claim to have information it doesn't have and clearly states when making estimates.",
+      "Yes, like any technology, SkalGPT is not 100% error-free. It may occasionally give incorrect answers due to database and source limitations. However, SkalGPT is honest and transparent: clearly states when uncertain, does not claim to have information it doesn't have, mentions when making estimates, and directs to alternative sources. It is recommended that you verify the information you receive on important topics and check with your teachers when necessary. SkalGPT views mistakes as learning opportunities and continuously improves.",
 
     faqQuestion8: "What should I do if I experience technical problems with SkalGPT?",
     faqAnswer8:
